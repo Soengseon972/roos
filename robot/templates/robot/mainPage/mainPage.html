@@ -1,0 +1,193 @@
+﻿<!-- 
+    作者：陈麒先
+    时间：2019.5.8
+-->
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>麒麟科技【内测版】</title>
+    <link href="{% static 'robot/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'robot/mainPage.css' %}">
+</head>
+
+<body>
+    <div class="backg"></div>
+    <div class="container" id="myStyle">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <!-- 顶部导航栏 -->
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <a href="{% url 'robot:mainPage' %}"><div class="robot_icon"></div></a>
+                        <ul class="nav navbar-nav daohang">
+                            <li>
+                                <a href="{% url 'robot:mainPage' %}">先先の小可爱</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right youcenav">
+                            <li>
+                                <a href="{% url 'robot:helper' %}" class="help" target="_blank">帮助</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    Master先先
+                                    <strong class="caret"></strong>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{% url 'robot:userInfo' %}" class="menu-contents">我的机器人</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'robot:userInfo' %}" class="menu-contents">用户资料</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'robot:index' %}" class="menu-contents">退出</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- 欢迎标题 -->
+                <div class="jumbotron">
+                    <h1>
+                        麒麟科技
+                    </h1>
+                    <p class="huanyingMsg">
+                        麒麟之才，敢为人先<br>
+                        科技，让生活更美好！欢迎使用麒麟科技智能机器人！
+                    </p>
+                    <p>
+                        <a class="btn btn-success btn-large denglu" href="{% url 'robot:robotConsole' %}">立即启动！</a>
+                    </p>
+                </div>
+                <!-- 团队介绍 -->
+                <div class="jumbotron">
+                    <h2>
+                        关于我们
+                    </h2>
+                    <p class="introductionMsg">
+                        一群敢想敢做的年轻人<br>
+                        我们坚信：<br>
+                        知识改变命运，教育改变中国，代码改变世界。<br>
+                        我们一道努力，<br>
+                        为建设扎根于中国大地的世界一流大学而不懈奋斗！<br>
+                        谨寄千里共明月，随君一路北航。
+                    </p>
+                </div>
+
+                <!-- 团队介绍轮播图 -->
+                <div class="introduction">
+                    <!-- 使用data-ride实现自动轮播，data-interval设置轮播周期 -->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3500">
+                        <!-- 轮播指标 -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <!-- 轮播项目 -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="{% static 'robot/images/chenqixian.jpg' %}" alt="qixian">
+                                <div class="carousel-caption">
+                                    <h2>
+                                        陈麒先 Chris.Chen
+                                    </h2>
+                                    <p >
+                                        项目经理，负责团队内日常打杂，为组里大佬们端茶倒水<br>
+                                        热衷划水，不到最后一刻誓不动手编码，擅长各种极限操作<br>
+                                        日常逗比，活跃团队氛围，让组里大佬们能开心编码<br>
+                                        菜鸟一枚，看组内大佬八仙过海各显神通，抱紧大腿，紧跟大佬步伐走向胜利！
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'robot/images/liuliang.jpg' %}" alt="liuliang">
+                                <div class="carousel-caption">
+                                    <h2>
+                                        刘亮 Bright.Liu
+                                    </h2>
+                                    <p style="color:darkmagenta;">
+                                        核心开发人员，团队技术难题攻关<br>
+                                        数据库架构师，系统高并发架构设计<br>
+                                        多年编程经验，最优化系统性能<br>
+                                        团队颜值担当，代言产品形象
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'robot/images/zhoushangchun.jpg' %}" alt="shangchun">
+                                <div class="carousel-caption">
+                                    <h2>
+                                        周尚纯 Aurora.Zhou
+                                    </h2>
+                                    <p>
+                                        核心技术人员，解决团队技术难题<br>
+                                        系统架构师，具有丰富的系统架构经验<br>
+                                        系统分析人员，追踪产品质量，指导产品迭代<br>
+                                        团队颜值担当，鼓舞团队士气，提升团队工作效率
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'robot/images/sunqi.jpg' %}" alt="sunqi">
+                                <div class="carousel-caption">
+                                    <h2>
+                                        孙琦 Susie.Sun
+                                    </h2>
+                                    <p>
+                                        核心开发人员，团队技术难题攻关<br>
+                                        系统实施人员，保证产品如期上线与发布<br>
+                                        极强算法能力，在多次迭代中优化产品性能<br>
+                                        团队颜值担当，鼓舞团队士气，提升团队工作效率
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'robot/images//qinfeng.jpg' %}" alt="qinfeng">
+                                <div class="carousel-caption">
+                                    <h2>
+                                        秦枫 Eurus.Qin
+                                    </h2>
+                                    <p>
+                                        核心技术人员，解决团队技术难题<br>
+                                        系统测试人员，保障产品顺利处理多种复杂的异常情况<br>
+                                        文档评审人员，严把产品质量关，保证文档符合开发规范<br>
+                                        团队颜值担当，鼓舞团队士气，提升团队工作效率
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 轮播导航 -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 底部 -->
+                <div class="footer">
+                    Copyright @2019 Powered by Chris.Chen. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'robot/jq/jquery.min.js' %}"></script>
+    <script src="{% static 'robot/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

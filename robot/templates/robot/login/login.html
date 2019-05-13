@@ -1,0 +1,52 @@
+<!-- 
+    作者：陈麒先
+    时间：2019.5.11
+-->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+{% load static %}
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>麒麟科技【内测版】</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'robot/normalize.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'robot/login.css' %}" />
+	<!--必要样式-->
+	<link rel="stylesheet" type="text/css" href="{% static 'robot/component.css' %}" />
+	<!--[if IE]>
+	<script src="js/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div class="container demo-1">
+		<div class="content">
+			<div id="large-header" class="large-header">
+				<!-- <canvas id="demo-canvas"></canvas> -->
+				<div class="logo_box">
+					<h2>欢迎登录，麒麟科技</h2>
+					<form action="#" name="f" method="post">
+						<div class="input_outer">
+							<span class="u_user"></span>
+							<input name="logname" class="text" style="color: #FFFFFF !important" type="text"
+								placeholder="请输入用户名">
+						</div>
+						<div class="input_outer">
+							<span class="us_uer"></span>
+							<input name="logpass" class="text"
+								style="color: #FFFFFF !important; position:absolute; z-index:100;" value=""
+								type="password" placeholder="请输入密码">
+						</div>
+						<div class="mb2"><a class="act-but submit" href="{% url 'robot:mainPage' %}" style="color: #FFFFFF">登录</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'robot/js/login.js' %}"></script>
+</body>
+
+</html>

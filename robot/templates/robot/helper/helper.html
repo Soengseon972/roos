@@ -1,0 +1,78 @@
+<!-- 作者：陈麒先 -->
+<!-- 时间：2019.5.11 -->
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>麒麟科技【内测版】</title>
+    <link href="{% static 'robot/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'robot/helper.css' %}">
+</head>
+
+<body>
+    <div class="container" id="myStyle">
+        <div class="row clearfix">
+            <!-- 顶部导航栏 -->
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <a href="#">
+                        <div class="robot_icon"></div>
+                    </a>
+                    <ul class="nav navbar-nav daohang">
+                        <li>
+                            <a href="#">先先の小可爱</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 帮助文档 -->
+            <div class="helper_body">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            使用说明
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        1. 设备地点：新主楼G1027；开放时间：9:00-12:00，14:00-17:00，19:00-21:00（周二、周四除外）。如果实验室门未开，请联系助教开门。<br>
+                        2.
+                        开始使用设备之前，请务必填写《2019软工嵌入式设备使用登记表》相关信息，进行登记。离开之前，如果是最后一组，请关闭机载笔记本电脑电源以及机器人电源，并将机器人拖放到几个铝皮箱子旁边。然后，整理好实验室环境，关门离开。<br>
+                        3.
+                        机器人电源按钮键程较长，开关时可稍微用力按下。电源按钮旁边的红色按钮是“急停按钮”，按下去，机器人就会立马停止运行；按照“急停按钮”上标注的方向旋转按钮，按钮弹起，机器人恢复工作。<br>
+                        4.
+                        机器人在正常工作（电源按钮按下，“急停按钮”弹起）的情况下，请不要使用蛮力推动机器人，会导致伺服电机损坏。如需拖动机器人，可以在正常工作状态下使用手柄控制；或者是按下“急停按钮”，然后用手轻推。<br>
+                        5.
+                        机器人正常工作电压范围为23.1V-29.4V，可通过机器人底座上的显示屏查看。当电压低于23.1V时，请停止使用机器人，并使用旁边的充电器给机器人充电。同理，当机载笔记本电脑电量过低时（低于10%时），也停止使用，并使用充电器充电。（机器人会在开放的时间段之外的时间段充电，所以大家使用时应该是有电的）<br>
+                        6. 机器人的整体支架和Kinect摄像头的位置出厂时已经调好了，最好不要随意调整机器人身上各个部件的位置，以防坐标转换出错。<br>
+                        7. 机器人的机械臂前端的抓手没有力反馈传感器，设置多大开合距离就夹取到多大开合距离。请不要把手放上去，注意安全，防止被夹！也不要夹取一些过硬的东西（可能会损坏夹取电机）。<br>
+                        8. 请不要升级系统（包括apt-get
+                        upgrade和系统弹出的升级提示等）！请不要升级系统！请不要升级系统！机载笔记本电脑上出厂使用Ubuntu14.04，并且已经配置好机器人驱动和开发环境，升级系统会导致机器人驱动失效！但是，可以使用apt-get
+                        update和apt-get install <pkg-name>安装其他软件包。系统的用户密码和su密码都是6。<br>
+                            9.
+                            使用语音功能需要联网，并设置麦克风。联网时需要先断开机载笔记本电脑的有线连接（系统设置->网络），然后自己用手机或笔记本电脑开一个热点，最后使用机载笔记本电脑的WIFI连上开好的热点即可（确保机载笔记本电脑能上网）。麦克风的设置请参考《启智ROS机器人开发手册》第十九章语音指令。<br>
+                            10.
+                            已经在~/catkin_ws/src中为各个组创建了package目录，目录名为组名，请大家把自己组的代码放在对应目录下进行调试。机载笔记本电脑已经开启了FTP服务器，可以通过ifconfig命令查看机载笔记本电脑IP地址，然后把自己电脑连上同一个局域网，接着使用FTP客户端将自己的代码上传到对应目录下；或者直接用U盘拷贝到机载笔记本电脑上。<br>
+                            11. 使用过程中有任何其他问题请联系助教解决。
+
+                    </div>
+                    <div class="panel-footer">
+                        祝您使用愉快！
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="footer">
+                Copyright @2019 Powered by Chris.Chen. All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'robot/jq/jquery.min.js' %}"></script>
+    <script src="{% static 'robot/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

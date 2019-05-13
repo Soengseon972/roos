@@ -1,0 +1,243 @@
+/* 
+作者：陈麒先
+时间：2019.5.8
+*/
+/* 全局初始化设置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('img/background.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+
+}
+/* 顶部样式设置 */
+/* 顶部导航栏左侧样式 */
+#myStyle .navbar-default{
+    margin-top: 10px;
+    border-color: #337ab7;    
+}
+#myStyle .navbar-collapse{
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    border-color: #337ab7;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+    box-sizing: border-box;
+}
+#myStyle .robot_icon{
+    height: 50px;
+    width: 50px;
+    margin-top: -2px;
+    margin-left: 3px;
+    background: url('img/icon.png');
+    background-size: 100%;
+    float: left;
+}
+#myStyle .daohang{
+    margin-left: 5px ;
+}
+#myStyle .daohang li{
+    font-size: 20px;
+    line-height: 50px;
+    border: 3px solid transparent;
+}
+#myStyle .daohang li:hover{
+    border-bottom: 3px solid rgb(253, 249, 5);
+    color:white ;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+}
+#myStyle .daohang li a{
+    color:rgb(253, 249, 5) ;
+    font-family: KaiTi;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+}
+/* 站内搜索样式 */
+#myStyle .znss{
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    right: 170px;
+}
+/* 右侧提示样式 */
+#myStyle .youcenav{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 20px;   
+}
+#myStyle .youcenav li a{
+    color: white;
+}
+#myStyle .youcenav .login{
+    margin-right: 10px;
+}
+#myStyle .youcenav .login:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    margin-right: 10px;
+}
+#myStyle .youcenav .help:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+#myStyle .youcenav .dropdown-toggle:hover{
+    color: yellow;
+}
+#myStyle .navbar-nav>.open>a{
+    background-color: transparent;
+}
+#myStyle .navbar-nav>li>.dropdown-menu{
+    margin-top: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    margin-right: -7px;  
+}
+#myStyle .navbar-nav>li>.dropdown-menu .menu-contents{
+    color: black;
+}
+/* 站标题样式 */
+#myStyle .jumbotron{
+    height: 330px;
+    position: relative;
+    background-color: transparent;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+#myStyle .jumbotron h1{
+    font-family: KaiTi; 
+    font-weight: bold;
+    margin-top: -10px;
+    color: white;
+}
+#myStyle .jumbotron h2{
+    font-family: KaiTi; 
+    font-weight: bold;
+    margin-top: -10px;
+    color: white;
+    border-top: 2px solid #999;
+    padding-top: 20px;
+}
+#myStyle .jumbotron .huanyingMsg{
+    margin-top: 30px;
+    color: white;
+    line-height: 35px;
+}
+#myStyle .jumbotron .introductionMsg{
+    margin-top: 30px;
+    color: white;
+    line-height: 35px;
+    font-size: 16px;
+    display: block;
+    height: 600px;
+}
+#myStyle .jumbotron .denglu{
+    width: 400px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: KaiTi;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    border-radius: 40px;
+    margin: 60px auto 0;
+    display: block;
+}
+#myStyle .jumbotron .denglu:hover{
+    width: 400px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    color:yellow;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: KaiTi;
+    background-color: #f40;
+    border-color: #f40;
+    border-radius: 40px;
+    margin: 60px auto 0;
+    display: block;
+}
+#myStyle .jumbotron .jinru{
+    width: 200px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: #449e44;
+    border-radius: 10px;
+    margin: 60px auto 0;
+    display: block;
+}
+#myStyle .jumbotron .jinru:hover{
+    width: 200px;
+    height: 80px;
+    line-height: 70px;
+    text-align: center;
+    color:yellow;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: #f40;
+    border-color: #f40;
+    border-radius: 10px;
+    margin: 60px auto 0;
+    display: block;
+}
+/* 轮播图样式 */
+#myStyle .introduction{
+    height: 500px;
+    width: 100%;
+    /* border: 3px solid white; */
+}
+#myStyle .introduction .carousel{
+    height: 100%;
+}
+#myStyle .introduction .carousel .carousel-inner{
+    height: 100%;
+}
+#myStyle .introduction .carousel .carousel-inner .item{
+    height: 100%;  
+}
+#myStyle .introduction .carousel .carousel-inner .item img{
+    height: 100%;
+    width: 35%;
+    margin: 0 auto;
+    opacity:1 !important;
+}
+#myStyle .carousel-caption h2{
+    color: cyan;
+}
+#myStyle .carousel-caption p{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    color: rgb(210, 255, 7);
+}
+/* 页脚样式 */
+#myStyle .footer{
+    position: absolute;
+    bottom:-10%;
+    height:30px;
+    width: 100%;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    line-height:30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #999;
+}
