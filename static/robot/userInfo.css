@@ -1,0 +1,262 @@
+/* 
+作者：陈麒先
+时间：2019.5.8
+*/
+/* 全局初始化设置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('images/background.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+
+}
+/* 顶部样式设置 */
+/* 顶部导航栏左侧样式 */
+#myStyle .navbar-default{
+    margin-top: 10px;
+    border-color: #337ab7;    
+}
+#myStyle .navbar-collapse{
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    border-color: #337ab7;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+    box-sizing: border-box;
+}
+#myStyle .robot_icon{
+    height: 50px;
+    width: 50px;
+    margin-top: -2px;
+    margin-left: 3px;
+    background: url('images/icon.png');
+    background-size: 100%;
+    float: left;
+}
+#myStyle .daohang{
+    margin-left: 5px ;
+}
+#myStyle .daohang li{
+    font-size: 20px;
+    line-height: 50px;
+    border: 3px solid transparent;
+}
+#myStyle .daohang li:hover{
+    border-bottom: 3px solid rgb(253, 249, 5);
+    color:white ;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+}
+#myStyle .daohang li a{
+    color:rgb(253, 249, 5) ;
+    font-family: KaiTi;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+}
+/* 站内搜索样式 */
+#myStyle .znss{
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+    right: 170px;
+}
+/* 右侧提示样式 */
+#myStyle .youcenav{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 20px;   
+}
+#myStyle .youcenav li a{
+    color: white;
+}
+#myStyle .youcenav .login{
+    margin-right: 10px;
+}
+#myStyle .youcenav .login:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    margin-right: 10px;
+}
+#myStyle .youcenav .help:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+#myStyle .youcenav .dropdown-toggle:hover{
+    color: yellow;
+}
+#myStyle .navbar-nav>.open>a{
+    background-color: transparent;
+}
+#myStyle .navbar-nav>li>.dropdown-menu{
+    margin-top: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    margin-right: -7px;  
+}
+#myStyle .navbar-nav>li>.dropdown-menu .menu-contents{
+    color: black;
+}
+/* 用户信息样式 */
+#myStyle .information{
+    width: 100%;
+    margin: 0px auto;
+    /* background-color: transparent; */
+}
+#myStyle .information li{
+    background-color: transparent;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* 列表覆盖样式 */
+#myStyle .list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0px;
+    line-height: 33px;
+}
+#myStyle .list-group-item{
+    border: 1px solid #337ab7;
+    line-height: 33px;
+}
+#myStyle .panel{
+    margin-top: 20px;
+    margin-bottom: 0;
+    border: 0px solid #fff;
+    
+    background-color: transparent;
+}
+#myStyle .panel-body{
+    background-color: transparent;
+    border: 1px solid #337ab7;
+    border-top: 0px;
+}
+#myStyle .panel-title{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 3px;
+}
+/* 用户基本信息样式 */
+#myStyle .user_icon{
+    background: url('images/user.jpg') no-repeat center center;
+    background-size: 100%;
+    height:100px;
+    width:100px;
+    /* border: 1px solid #fff; */
+    float: left;
+}
+#myStyle .user_zh_name{
+    height: 30px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color:#fff;
+    margin-left: 108px;
+}
+#myStyle .user_en_name{
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    color:#ccc;
+    margin-left: 108px;
+}
+#myStyle .user_level{
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    color:#ddd;
+    margin-left: 108px;
+}
+#myStyle .star_user{
+    margin-left: 100px;
+}
+#myStyle .star_user li{
+    height:20px;
+    width: 20px;
+    background: url('images/star.png') no-repeat center center;
+    background-size: 100%;
+    /* border: 1px solid #fff; */
+    float: left;
+    margin-left: 8px;
+    list-style: none;
+}
+#myStyle .badge{
+    margin-top: 7px;
+}
+#myStyle .badge.green{  
+    background-color: #5cb85c;
+}
+#myStyle .badge.red{
+    background-color: #d9534f;
+}
+#myStyle .badge.blue{
+    background-color: #5bc0de;
+}
+#myStyle .badge.yellow{
+    background-color: rgb(251, 188, 5);
+}
+#myStyle .remain_unit{
+    float:right;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: 3px;
+}
+#myStyle .logo{
+    height: 30px;
+    width: 30px;
+    /* border: 1px solid white; */
+    float: left;
+    margin-right: 5px;
+}
+#myStyle .logo.icon1{
+    background: url('images/icon1.png') no-repeat center center;
+    background-size: 100%;
+}
+#myStyle .logo.icon2{
+    background: url('images/icon2.png') no-repeat center center;
+    background-size: 100%;
+}
+#myStyle .logo.icon3{
+    background: url('images/icon3.png') no-repeat center center;
+    background-size: 100%;
+}
+/* 用户使用时长图表样式 */
+#myStyle .chart_wrapper{
+    height: 550px;
+    width: 100%;
+    border: 1px solid #faebcc;
+    border-radius: 0 0 4px 4px;
+}
+#myStyle .line_chart{
+    height:90%;
+    width:90%;
+    /* border: 1px solid #fff; */
+    margin: 18px auto;
+}
+/* 用户操作样式 */
+#myStyle .information li.operation{
+    padding-left: 30px;
+}
+/* 页脚样式 */
+#myStyle .footer{
+    height:30px;
+    width: 100%;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    line-height:30px;
+    margin: 30px auto;
+    border-top: 1px solid #999;
+}
