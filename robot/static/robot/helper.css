@@ -1,0 +1,82 @@
+/* 
+<!-- 作者：陈麒先 -->
+<!-- 时间：2019.5.11 --> 
+*/
+/* 全局初始化设置 */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('images/background.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.8;
+
+}
+/* 顶部样式设置 */
+/* 顶部导航栏左侧样式 */
+#myStyle .navbar-default{
+    margin-top: 10px;
+    border-color: #337ab7;    
+}
+#myStyle .navbar-collapse{
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 3px;
+    border-color: #337ab7;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+    box-sizing: border-box;
+}
+#myStyle .robot_icon{
+    height: 50px;
+    width: 50px;
+    margin-top: -2px;
+    margin-left: 3px;
+    background: url('images/icon.png');
+    background-size: 100%;
+    float: left;
+}
+#myStyle .daohang{
+    margin-left: 5px ;
+}
+#myStyle .daohang li{
+    font-size: 20px;
+    line-height: 50px;
+    border: 3px solid transparent;
+}
+#myStyle .daohang li:hover{
+    border-bottom: 3px solid rgb(253, 249, 5);
+    color:white ;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+}
+#myStyle .daohang li a{
+    color:rgb(253, 249, 5) ;
+    font-family: KaiTi;
+    font-size: 24px;
+    font-weight: bold;
+    /* background-color: rgb(149, 218, 250); */
+    background-color: #337ab7;
+}
+/* 帮助文档样式 */
+#myStyle .helper_body{
+    width: 60%; 
+    margin:0 auto;
+    line-height: 25px;
+    text-indent: 2em;
+}
+
+/* 页脚样式 */
+#myStyle .footer{
+    height:30px;
+    width: 100%;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    line-height:30px;
+    margin: 30px auto;
+    border-top: 1px solid #999;
+}
